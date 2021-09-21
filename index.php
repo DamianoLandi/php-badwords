@@ -10,8 +10,15 @@
     <h1>ciao</h1>
     <?php 
     $testo = "Ciao sono un testo!";
-    echo $testo . " Lunghezza: " . strlen($testo)
+    echo $testo . " Lunghezza: " . strlen($testo);
 
+    $parola = $_GET["word"];
+
+    $nuovo_testo = str_replace($parola, '***', $testo);
+
+    echo "<br/>" . $nuovo_testo . ' Lunghezza: ' . strlen($nuovo_testo);
+
+    
     ?>
 </body>
 </html>
