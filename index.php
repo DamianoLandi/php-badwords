@@ -7,6 +7,11 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h1>ciao</h1>
+    <?php 
+    $testo = "Ciao sono un testo!";
+    echo $testo . " Lunghezza: " . strlen($testo)
+
+    ?>
 </body>
 </html>
